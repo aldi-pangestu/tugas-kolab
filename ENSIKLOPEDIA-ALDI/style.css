@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    background-image: url("img/background2.png");
+    background-size: cover;
+}
+
+header {
+    background-color: #faf0e7;
+}
+
+.carousel-item-label{
+    padding-left: 8px; 
+    position: absolute; 
+    bottom: 30px; 
+    width: 100%; 
+    background-color: rgb(31, 25, 25); 
+    font-family: Garamond;
+    font-size: 18pt;
+    color: white;
+    opacity: 90%;
+    text-align: center;
+} 
+
+.timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #4f565f;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-event {
+    position: relative;
+    margin: 2rem 0;
+    width: 49%;
+    padding: 1rem;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-event.left {
+    left: -4px;
+}
+
+.timeline-event.right {
+    left: 51.2%;
+    transform: translateX(100%);
+}
+
+.timeline-event::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background: #272d35;
+    border-radius: 50%;
+    z-index: 1;    
+}
+
+.timeline-event.left::after {
+    right: -24px;
+}
+
+.timeline-event.right::after {
+    left: -24px;
+}
+
+.container-cover {
+    background-color: #faf0e7;
+}
+
+.container-title {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; 
+    font-size: 24pt;
+}
+
+.div-source {
+    font-style: italic;
+}
+
+.href-source {
+    font-size: 12px;
+}
